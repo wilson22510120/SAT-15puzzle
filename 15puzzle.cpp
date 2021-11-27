@@ -23,10 +23,8 @@ int main(int argc, char* argv[])
 	fout.open(argv[2],ios::out);
 
 	fin >> length_of_square;
-	cout << length_of_square << endl;
 
 	fin >> steps;
-	cout << steps << endl;
 	// cout << length_of_square << endl;
 	size_t a, b, c, d;
 
@@ -111,7 +109,6 @@ int main(int argc, char* argv[])
 				}
 			}
 		}		
-		cout << "22222222" << '\n';
 		// 3. One is empty tile
 		for(size_t i = 0; i < 4; i++) {
 			// break;
@@ -135,7 +132,6 @@ int main(int argc, char* argv[])
 				solver.addCNFnoF(_s[i][j][0][t-1], true, v2, false);
 			}
 		}
-		cout << "3333333" << '\n';
 
 		// 4. 14 tiles unchanged
 		for(size_t i = 0; i < 4; i++) {
@@ -159,7 +155,6 @@ int main(int argc, char* argv[])
 				solver.addAigCNF(vf, tmp1, false, V[0], false);
 			}
 		}    
-		cout << "44444444" << '\n';
 
 		// 5. red implies
 		for(size_t i = 0; i < 4; i++) {
@@ -178,7 +173,6 @@ int main(int argc, char* argv[])
 
 			}
 		}
-		cout << "555555555" << '\n';
 
 		// 6. assert property
 		if(t == 0) {
@@ -198,7 +192,6 @@ int main(int argc, char* argv[])
 				}
 			}
 		}
-				cout << "66666666" << '\n';
 
 		// 7. no repeats move
 		if(t >= 2) {
@@ -211,7 +204,6 @@ int main(int argc, char* argv[])
 			}		
 		}
 		
-		cout << "877777777" << '\n';
 
 
 		// solve or not

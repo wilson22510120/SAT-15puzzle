@@ -19,8 +19,3 @@ vector<vector<int> > neighbor(size_t i, size_t j){
     }
     return ans;
 }
-
-// void assignInitial(SatSolver& solver, const Var*** _s[81], const size_t& initial_array[4]) {
-//     cout << _s[0][0][0][0]<<endl;
-//     cout << initial_array[0][0] << endl;
-// }
