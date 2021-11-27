@@ -3,8 +3,8 @@
 ### make clean
 ### make
 ## Execute:
-### ./satPuzzle <input file>
+### ./satPuzzle &lt;input file>
 ## input file format:
-### <square size>
-### <steps to run>
-### <matrix of initial puzzle>
+### &lt;square size>
+### &lt;steps to run>
+### &lt;matrix of initial puzzle>
