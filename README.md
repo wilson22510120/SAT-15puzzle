@@ -15,7 +15,7 @@ The 15 puzzle is a sliding puzzle having 15 square tiles numbered 1–15 in a fr
 
 eg.
 
-![](https://imgur.com/a/bICXYot)
+<img src="https://imgur.com/PjOJO2u.png" width="250">
 
 format:
 ```
