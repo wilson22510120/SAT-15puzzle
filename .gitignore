@@ -1,0 +1,6 @@
+.depend.mak
+15puzzle
+15puzzle.o
+File.o
+Proof.o
+Solver.o
