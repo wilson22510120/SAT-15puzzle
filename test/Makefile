@@ -1,5 +1,5 @@
-satPuzzle: clean File.o Proof.o Solver.o 15puzzle.o
-	g++ -o $@ -g File.o Proof.o Solver.o 15puzzle.o
+satTest: clean File.o Proof.o Solver.o satTest.o
+	g++ -o $@ -g File.o Proof.o Solver.o satTest.o
 
 File.o: File.cpp
 	g++ -c -g File.cpp
@@ -10,8 +10,8 @@ Proof.o: Proof.cpp
 Solve.o: Solver.cpp
 	g++ -c -g Solver.cpp
 
-15puzzle.o: 15puzzle.cpp
-	g++ -c -g 15puzzle.cpp
+satTest2.o: satTest2.cpp
+	g++ -c -g satTest2.cpp
 
 clean:
 	rm -f *.o satTest tags
